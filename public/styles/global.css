@@ -1,0 +1,96 @@
+:root {
+    --light-blue: rgb(212, 240, 255);
+    --light-contrast: rgb(255, 255, 237);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100vh;
+}
+
+body {
+    height: 100%;
+    background-color: var(--light-blue);
+    margin: 0;
+}
+
+body.flower {
+   background-color: blanchedalmond;
+}
+
+body.sith {
+    background-color: #333;
+    color: #fff;
+}
+
+header {
+    padding: 24px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+header p {
+    font-size: 1.5rem;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+    max-width: 800px;
+    margin: auto;
+    padding: 16px;
+}
+
+nav ul li {
+    background-color: rgb(227, 182, 127);
+    border-radius: 10px;
+    padding: 8px 16px;
+    transition: all .3;
+}
+
+nav ul li:hover {
+    background-color: #333;
+}
+
+a, 
+a:visited,
+a:active {
+    color: #fff;
+    text-decoration: none;
+}
+
+.banner {
+    /* align-content: flex-end; */
+    align-items: flex-end;
+    display: flex;
+    flex-direction: column;
+    height: 60%;
+    width: 100%;
+    background-image: url(../images/cherry-blossom.png);
+    background-size: cover;
+}
+
+.banner > p {
+    color: #fff;
+    text-align: right;
+    font-size: 7rem;
+    margin: 32px;
+    width: 60%;
+}
+
+.main-content {
+    text-align: center;
+}
+
+.footer-container {
+    background-color: var(--light-contrast);
+    display: flex;
+    justify-self: self-end;
+}

@@ -1,0 +1,9 @@
+<div class="products">
+    <% if (locals.products) { %>
+        <% products.forEach(product => { %>
+            <p><span>Name:</span> <%= product.name %></p>
+            <p><span>Kind:</span> <%= product.kind %></p>
+            <p><span>Colour:</span> <%= product.colour %></p>
+       <%  }) %>
+    <% } %>
+</div>
