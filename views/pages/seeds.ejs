@@ -1,6 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang='en'>
 <%- include('../partials/head') %>
-<body>
-    <%- include("../partials/header") %>
-</html>
+    <body class=<%=className %>>
+        <%- include('../partials/header') %>
+        <div class='main-content'>
+            <% if (locals.className==='seeds' ) { %>
+                <%- include('../partials/seed-message') %>
+                <%- include('../partials/products') %>
+            <% } else { %>
+                <%- include('../partials/no-match') %>
+            <% } %>
+        </div>
+    </body>
+</html> 
