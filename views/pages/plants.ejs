@@ -3,13 +3,15 @@
 <%- include('../partials/head') %>
     <body class=<%=className %>>
         <%- include('../partials/header') %>
+        <%- include('../partials/menu') %>
         <div class='main-content'>
             <% if (locals.className==='plants' ) { %>
                 <%- include('../partials/plant-message') %>
                 <%- include('../partials/products') %>
-            <% } else { %>
-                <%- include('../partials/no-match') %>
-            <% } %>
+                <% } else { %>
+                    <%- include('../partials/no-match') %>
+                    <% } %>
         </div>
+        <%- include('../partials/footer') %>
     </body>
 </html> 
