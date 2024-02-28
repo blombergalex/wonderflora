@@ -1,7 +1,7 @@
 :root {
     --light-blue: rgb(212, 240, 255);
     --light-contrast: rgb(237, 254, 255);
-    --accent-color: rgb(227, 182, 127);
+    --accent-color: rgb(250, 206, 226);
 }
 
 * {
@@ -46,9 +46,7 @@ nav ul {
     justify-content: space-around;
     max-width: 800px;
     margin: auto;
-    padding: 16px;
-
-   
+    padding: 16px;   
 }
 
 nav a{
@@ -104,11 +102,27 @@ a:active {
     top: 122px;
 }
 
+.category-message {
+    align-items: center;
+    border-radius: 5px;
+    display: flex;
+    height: 65px;
+    background-color: var(--accent-color);
+    padding: 16px;
+    width: fit-content;
+    animation: swing 1.5s ease-in-out infinite;
+    position: fixed;
+    top: 350px;
+    right: 25px;
+    z-index: 1000;
+
+}
+
 .products {
-    
     padding: 16px;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .product-bubble {
@@ -132,3 +146,40 @@ footer {
     justify-content: center;
     flex-shrink: 0;
 }
+
+  @keyframes swing {
+    0% {
+      transform: rotate(0deg);
+    }
+    10% {
+      transform: rotate(5deg);
+    }
+    20% {
+      transform: rotate(-10deg);
+    }
+    30% {
+      transform: rotate(10deg);
+    }
+    40% {
+      transform: rotate(-5deg);
+    }
+    50% {
+      transform: rotate(0deg);
+    }
+    60% {
+      transform: rotate(5deg);
+    }
+    70% {
+      transform: rotate(-5deg);
+    }
+    80% {
+      transform: rotate(2deg);
+    }
+    90% {
+      transform: rotate(-2deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+  
