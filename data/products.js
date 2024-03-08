@@ -31,3 +31,5 @@ export const seeds = [
     new Product('Tulip-seeds', 'Do eiusmod tempor incididunt ut labore et dolore magna aliqua', 'mixed', '19 kr'),
     new Product('Rose-seeds', 'Do eiusmod tempor incididunt ut labore et dolore magna aliqua', 'white', '29 kr')
 ];
+
+export const products = [...flowers, ...plants, ...seeds];
