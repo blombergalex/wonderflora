@@ -1,9 +1,9 @@
 import express from 'express';
-import { products } from '../data/products'
+import { products } from '../data/products.js'
 
 const productRouter = express.Router();
 
-productRouter.get('/productName', (req, res) => {
+productRouter.get('/:productName', (req, res) => {
     const productName = req.params.productName;
 
     const product = products.filter(item => item.name === productName)

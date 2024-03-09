@@ -1,5 +1,6 @@
 import express from 'express'
 import {seeds} from '../data/products.js'
+import productRouter from "./productRouter.js";
 
 const seedRouter = express.Router();
 
@@ -14,5 +15,7 @@ seedRouter.get('/', (req, res) =>
         }
     )
 )
+
+seedRouter.use('/', productRouter);
 
 export default seedRouter;

@@ -1,5 +1,6 @@
 import express from "express"
 import { flowers } from "../data/products.js"
+import productRouter from "./productRouter.js";
 
 const flowRouter = express.Router();
 
@@ -14,5 +15,8 @@ flowRouter.get('/',(req, res) =>
         }
     )
 )
+
+flowRouter.use('/', productRouter);
+
 
 export default flowRouter;

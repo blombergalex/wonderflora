@@ -22,11 +22,8 @@ app.get('/', (req, res) => {
 })
 
 app.use('/flowers', flowRouter)
-
 app.use('/plants', plantRouter)
-
 app.use('/seeds', seedRouter)
 
 app.use(express.static('public'));
-
 app.listen(port, () => console.log(`Listening on port: ${port}`));
