@@ -21,9 +21,9 @@ export const plants = [
     new Product('Monstera', 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris', 'dark-green', '229 kr'),
     new Product('Zanzibar-gem', 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris', 'green', '139 kr'),
     new Product('Snake-plant', 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris', 'green-yellow', '189 kr'),
-    new Product('Aloe Vera', 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris', 'green', '69 kr'),
+    new Product('Aloe-Vera', 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris', 'green', '69 kr'),
     new Product('Bamboo', 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris', 'green', '99 kr'),
-    new Product('Spider Plant', 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris', 'green', '79 kr')
+    new Product('Spider-Plant', 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris', 'green', '79 kr')
 ];
 
 export const seeds = [
