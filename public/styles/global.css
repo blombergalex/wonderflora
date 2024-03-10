@@ -61,13 +61,13 @@ nav a{
     cursor: pointer;
 }
 
-nav a:hover {
+.navbar a:hover {
     transform: scale(1.1);
 }
 
-a, 
-a:visited,
-a:active {
+.navbar a, 
+.navbar a:visited,
+.navbar a:active {
     color: #fff;
     text-decoration: none;
 }
@@ -131,6 +131,14 @@ a:active {
     height: 200px;
     margin: 16px;
     padding: 8px;
+}
+
+.product-bubble a,
+.product-bubble a:active,
+.product-bubble a:visited {
+  color: black;
+  text-decoration: none;
+  font-weight: 799;
 }
 
 .small-product-img {
