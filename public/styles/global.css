@@ -18,6 +18,8 @@ body {
   height: 100%;
   background-color: var(--light-blue);
   margin: 0;
+  display: flex;
+  flex-direction: column;
 }
 
 header {
@@ -78,7 +80,7 @@ header p {
   align-items: flex-end;
   display: flex;
   flex-direction: column;
-  height: 60%;
+  height: 100%;
   width: 100%;
   background-image: url(../images/cherry-blossom.png);
   background-size: cover;
@@ -90,7 +92,7 @@ header p {
 .banner p {
   color: #fff;
   text-align: right;
-  font-size: 6rem;
+  font-size: 5rem;
   margin: 32px;
   width: min-content;
 }
@@ -100,7 +102,6 @@ header p {
   justify-content: center;
   text-align: center;
   flex: 1;
-  min-height: 100vh;
   position: sticky;
   top: 122px;
 }
@@ -118,14 +119,15 @@ header p {
   top: 350px;
   right: 25px;
   z-index: 1000;
-
 }
 
 .products {
   padding: 16px;
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+  align-content: flex-start;
 }
 
 .product-bubble {
@@ -143,7 +145,15 @@ header p {
 .product-bubble a:visited {
   color: black;
   text-decoration: none;
-  font-weight: 700;
+  font-weight: 600;
+  font-size: 0.8rem;
+  border-radius: 5px;
+  background-color: #ffffff83;
+  padding: 4px;
+}
+
+.product-bubble:hover {
+  transform: scale(1.05);
 }
 
 .small-product-img {
@@ -180,10 +190,16 @@ header p {
   margin: 16px;
 }
 
+.reverse-btn:hover {
+  transform: scale(1.1);
+}
+
 footer {
     display: flex;
     justify-content: center;
     flex-shrink: 0;
+    color: var(--dark-color);
+    background-color: #ffffff83;
 }
 
   @keyframes swing {
