@@ -1,7 +1,7 @@
 <div class='product-page'>
     <h3><%= product.name %></h3>
     <p><%= product.price %></p>
-    <img class="small-product-img" src=<%= `/images/${product.name}.png` %> height="100px" width="100px" alt="image of <%=product.name%>"> </img>
+    <img class="small-product-img" src=<%= `../../images/${product.name}.png` %> height="100px" width="100px" alt="image of <%=product.name%>"> </img>
     <p><%= product.kind %></p>
     <a class="reverse-btn" href= <%=`/${product.group}`%>>Back </a>
 </div>
