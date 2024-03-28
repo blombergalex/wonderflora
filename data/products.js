@@ -22,7 +22,7 @@ export const plants = [
     new Product('Monstera', 'plants', 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris', 'dark-green', '229 kr'),
     new Product('Zanzibar-gem', 'plants', 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris', 'green', '139 kr'),
     new Product('Snake-plant', 'plants', 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris', 'green-yellow', '189 kr'),
-    new Product('Aloe-Vera', 'plants', 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris', 'green', '69 kr'),
+    new Product('Aloe-vera', 'plants', 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris', 'green', '69 kr'),
     new Product('Bamboo', 'plants', 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris', 'green', '99 kr'),
     new Product('Spider-plant', 'plants', 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris', 'green', '79 kr')
 ];
